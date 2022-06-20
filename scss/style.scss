@@ -3,26 +3,3 @@
 @import "general";
 @import "main";
 @import "swiper";
-
-
-body {
-    font-family: $monserat;
-    background-color: #FFA1A1;
-
-    header {
-        margin: 30px 125px;
-        display: flex;
-        justify-content: space-between;
-
-        .header_item {
-            display: inline;
-
-            .header_link {
-                text-decoration: none;
-                color: rgb(0, 0, 0);
-                list-style: none;
-                font-weight: bold;
-            }
-        }
-    }
-}

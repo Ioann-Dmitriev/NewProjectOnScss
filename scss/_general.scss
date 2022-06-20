@@ -1,10 +1,42 @@
 $monserat: 'Montserrat', sans-serif;
+$yelw: #f8e074;
+$white: #fff;
+$black: rgb(0, 0, 0);
+$wrap: 1950px;
+$container: 1200px;
+$mc: 0 auto;
 
-$mainCol: #FFA1A1;
-$secondCol: #ffc1c1;
+@mixin flex($jc, $ai) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: $jc;
+    align-items: $ai;
+}
 
-*,
 *::before,
 *::after {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: $monserat;
+    background-color: #fff;
+    color: $black;
+    margin: 0;
+}
+
+.wrapper {
+    max-width: $wrap;
+    margin: $mc;
+    padding: 0 150px;
 }
