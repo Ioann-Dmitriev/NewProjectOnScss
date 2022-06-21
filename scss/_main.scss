@@ -10,6 +10,8 @@
 
 #pook {
     box-shadow: 1px 1px 8px rgba(0, 0, 0, .16);
+    position: relative;
+    top: 25px;
 }
 
 .header_item {
@@ -18,17 +20,18 @@
         margin: 0 10px;
         text-decoration: none;
         color: #000000;
-        font-weight: 400;
+        font-weight: 700;
         font-size: 20px;
         display: block;
         padding: 30px 20px;
         transition: 0.3s;
-
+        border-top: 5px solid transparent;
     }
 
     :hover {
         color: white;
-        font-weight: bold;
+        font-weight: 700;
+        border-top: 5px solid rgb(255, 255, 255);
     }
 }
 
@@ -39,25 +42,85 @@
         padding: 14px 32px;
         margin-left: 100px;
         border-radius: 32px;
-        font-weight: 700;
+        font-weight: 400;
         transition: .2s ease background-color;
     }
 
     :hover {
         color: #000000;
         background-color: rgb(255, 255, 255);
-        text-decoration: none;
+        font-weight: 400;
     }
 }
 
 #logo {
     float: left;
-    margin-right: 110px;
+    margin: 0 60px;
+
 }
 
 .main-center {
-    justify-content: space-between;
+    @include flex(space-between, flex-start);
+    margin-top: 190px;
+}
 
+.p_main {
+    position: relative;
+    font-weight: 700;
+    font-size: 48px;
+    margin: 0 60px;
+    display: block;
+}
 
+.main_text_title {
+    position: relative;
+    display: block;
+    font-weight: 500;
+    font-size: 28px;
+    margin: 106px 60px;
+    width: 40%;
 
+}
+
+.link_but {
+    display: block;
+    top: 30px;
+    width: 100%;
+    position: relative;
+    margin: 0 60px;
+}
+
+.btnone-main {
+    a {
+        background-color: rgb(0, 0, 0);
+        color: #FFFFFF;
+        text-decoration: none;
+        padding: 19px 100px;
+        margin-right: 0px;
+        border-radius: 110px;
+        font-weight: 400;
+        font-size: 28px;
+        transition: .2s ease background-color;
+    }
+
+    :hover {
+        text-decoration: none;
+        color: #000000;
+        background-color: rgb(255, 255, 255);
+    }
+
+}
+
+.main-img {
+    width: 20%;
+    transform: scale(-1, 1);
+    margin-top: 3%;
+    margin-left: 54%;
+    position: absolute;
+
+    img {
+        width: 100%;
+        height: 100%;
+
+    }
 }
